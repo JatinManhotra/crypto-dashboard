@@ -78,7 +78,7 @@ const PriceSection = () => {
        </Flex>
         <TabPanels>
           <TabPanel>
-          <Image mt={"48px"} w={"full"} src="/graph.svg" />
+          <Image mt={"48px"} w={"full"} src={`${import.meta.env.BASE_URL}graph.svg`} />
       <HStack justify={"space-between"}>
         {timestamps.map((item) => (
           <Text key={item} fontSize={"sm"} color={"black.80"}>
@@ -98,3 +98,4 @@ const PriceSection = () => {
 };
 
 export default PriceSection;
+
